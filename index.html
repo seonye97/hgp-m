@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <title>
+            mobile web redesign
+        </title>
+
+        <meta charset="utf-8">
+
+        <!--aos head 영역-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+        <!--둥둥이-->
+        <link rel="stylesheet" href="css/DB_etc10.css" type="text/css"></link>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.DB_springMove.min.js"></script>
+       
+
+       
+       <style type="text/css">
+       
+            *{margin: 0; padding: 0;
+              }
+              html{ background-color: #222;}
+
+
+              #wrap {
+                width: 1320px;
+                height:10313px;
+
+                margin: 0 auto;
+
+                background: url(img/hgp-mobile.png) no-repeat center;
+                background-size: 1320px;
+
+                overflow: hidden;
+               
+            }
+
+
+            .aos01 {
+                position: absolute;
+                margin: 107px 0 0 370px;
+                z-index: 999;
+            }
+
+            .aos02 {
+                position: absolute;
+                margin: 1179px 0 0 296px;
+
+            }
+
+            .aos03 {
+                position: absolute;
+                margin: 5298px 0 0 48px;
+            }
+
+            .aos04 {
+                position: absolute;
+                margin: 6019px 0 0 419px;
+            }
+
+            .aos05 {
+                position: absolute;
+                margin: 6905px 0 0 36px;
+            }
+
+            .aos06 {
+                position: absolute;
+                margin: 7939px 0 0 36px;
+            }
+
+            .aos07 {
+                position: absolute;
+                margin: 8435px 0 0 407px;
+            }
+
+            /* #topButton {position: fixed; right: 1%; bottom: -40px; display: none; z-index: 999;}탑버튼 */
+       
+       #slider {
+   overflow:hidden;
+   position:relative;
+   background-color: #5696ff;
+   width:1320px;  
+   height:50px;
+   margin-top: 450px;
+   
+}
+.image-box {
+   width:1320px; 
+   height:100%;
+   display:flex;
+   flex-wrap:nowrap;
+   animation: bannermove 5s linear infinite;
+
+   align-items: center;
+
+}
+
+.image-box img{margin-right: 70px;}
+
+@keyframes bannermove {
+  0% {
+      transform: translate(0, 0);
+  }
+  100% {
+      transform: translate(-50%, 0);
+  }
+}
+       
+       
+       
+       </style>
+    </head>
+    <body>
+
+
+
+        <div id="wrap">
+
+
+
+
+
+
+
+
+
+
+
+           
+
+
+
+            <div class="DB_etc10_2">
+                <div class="aos01">
+                    <img src="img/aos01-main.png">
+                </div>
+            </div>
+
+            <div class="aos02">
+                            <img src="img/aos02-resolve.png" data-aos="fade-up">
+                        </div>
+
+            <div class="aos03">
+                <img src="img/aos03-screen.png" data-aos="fade-up">
+            </div>
+
+            <div class="aos04">
+                <img src="img/aos04-screen.png" data-aos="fade-up">
+            </div>
+
+            <div class="aos05">
+                <img src="img/aos05-screen.png" data-aos="fade-up">
+            </div>
+
+            <div class="aos06">
+                <img src="img/aos06-screen.png" data-aos="fade-up">
+            </div>
+
+            <div class="aos07">
+                <img src="img/aos07-screen.png" data-aos="fade-up">
+            </div>
+
+
+
+
+
+
+
+
+<div id="slider">
+   <div class="image-box">
+      <div><img src="img/scroll-01.png" /></div>
+      <div><img src="img/scroll-02.png" /></div>
+      <div><img src="img/scroll-03.png" /></div>
+      <div><img src="img/scroll-04.png" /></div>
+      <div><img src="img/scroll-05.png" /></div>
+      <div><img src="img/scroll-06.png" /></div>
+      <div><img src="img/scroll-01.png" /></div>
+      <div><img src="img/scroll-02.png" /></div>
+        <!-- clone     -->
+      <div class="clone"><img src="img/scroll-01.png" /></div>
+      <div class="clone"><img src="img/scroll-02.png" /></div>
+      <div class="clone"><img src="img/scroll-03.png" /></div>
+      <div class="clone"><img src="img/scroll-04.png" /></div>
+      <div class="clone"><img src="img/scroll-05.png" /></div>
+      <div class="clone"><img src="img/scroll-06.png" /></div>
+      <div class="clone"><img src="img/scroll-03.png"/></div>
+      <div class="clone"><img src="img/scroll-04.png" /></div>
+   </div>
+</div>
+
+
+
+
+           
+
+
+
+
+        </div>
+
+
+
+
+
+
+        
+
+
+
+
+        <!--aos body 영역-->
+        <script> AOS.init(); </script>
+
+
+        <!--둥둥이 body 영역-->
+        <script>
+
+            $('.DB_etc10_2').DB_springMove({
+                key: 'c65806',                //���̼���Ű
+                dir: 'y',               //������('x','y')
+                mirror: 1,              //�ݴ�����̵�(1,-1)
+                radius: 10,             //�ݰ�
+                motionSpeed: 0.08       //�ӵ�(0~1)
+            })
+
+        </script>
+
+        <script>
+            $('.DB_etc10_1').DB_springMove({
+                key: 'c65806',                //���̼���Ű
+                dir: 'x',               //������('x','y')
+                mirror: 1,              //�ݴ�����̵�(1,-1)
+                radius: 10,             //�ݰ�
+                motionSpeed: 0.1,       //�ӵ�(0~1)
+                over: 'stop'
+            })
+        </script>
+
+
+
+
+       
+    </body>
+</html>
